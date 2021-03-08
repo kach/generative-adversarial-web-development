@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+#controls {
+  flex-basis: 20em;
+  background: #eee;
+  flex-grow: 1;
+  padding: 0.5em;
+}
+
+iframe {
+  border: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  flex-grow: 30;
+}
+</style>
+
+<div id='controls'>
+<h1>Substance and Style: Generative Adversarial Web Development</h1>
+
+<p><em>~kach and ~gmittal</em></p>
+
+<select id="h">
+<option value="none.html" selected>none.html</option><option value="antoine.html">antoine.html</option>
+</select>
+<select id="c">
+<option value="none.css" selected>none.css</option><option value="taylor.css">taylor.css</option><option value="gwyn.css">gwyn.css</option><option value="kenneth.css">kenneth.css</option>
+</select>
+<a id="a" href="blank.html__kenneth.css.html" target="display">Go!</a>
+
+<p><strong>Abstract:</strong> We recruited a group of undergraduate university
+students from a variety of institutions to write HTML or CSS for a simple mock
+resume, <em>without seeing the corresponding CSS or HTML.</em> We hypothesize
+that this single-blind protocol leads developers to consciously use semantic
+web technologies, and thus produce better software.</p>
+
+<p>For the data analysis, we need your help! Vote for your favorite
+combinations by leaving a comment <a href="https://news.ycombinator.com/">on
+Hacker News</a>. Both members of the winning pair will be mailed a small
+prize.</p>
+
+<script>
+window.addEventListener('load', function() {
+  var h = document.getElementById('h');
+  var c = document.getElementById('c');
+  var a = document.getElementById('a');
+  var i = document.getElementById('i');
+  function updateLink() {
+    i.src = h.value + '__' + c.value + '.html';
+    a.href = h.value + '__' + c.value + '.html';
+  };
+  h.addEventListener('change', updateLink);
+  c.addEventListener('change', updateLink);
+  updateLink();
+});
+</script>
+
+</div>
+
+<iframe id="i" name="display" src=""></iframe>
