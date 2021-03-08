@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-repeat: no-repeat;
+    background-image: url('https://i.ibb.co/Jt9Q8jT/ezgif-com-gif-maker-2021-03-08-T092208-093.gif');
+}
+* {
+  font-family: "Crimson Text", Georgia;
+  font-size: 12px;
+  line-height: 1.5;
+}
+@font-face {
+  font-family: harryPotter;
+  src: url("https://file.io/ayF1iI5INqkj");
+}
+
+h1 {
+  font-size: 24px;
+  color: rgb(125,10,9);
+  font-family: harryPotter;
+}
+h2 {
+  font-size: 20px;
+  color: rgb(254,196,0)
+}
+h3 {
+  font-size: 16px;
+}
+p {
+  font-size: 12px;
+}
+b, strong {
+   color: rgb(125,10,9);
+}
