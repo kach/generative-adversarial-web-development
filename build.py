@@ -30,9 +30,9 @@ with open('index.html') as f:
 h_select = ''
 c_select = ''
 for h in html_names:
-    h_select += (f'''<option value="{h}"{' selected' if 'none' in h else ''}>{h}</option>''')
+    h_select += (f'''  <option value="{h}"{' selected' if 'none' in h else ''}>{h}</option>\n''')
 for c in css_names:
-    c_select += (f'''<option value="{c}"{' selected' if 'none' in c else ''}>{c}</option>''')
+    c_select += (f'''  <option value="{c}"{' selected' if 'none' in c else ''}>{c}</option>\n''')
 
 with open('www/index.html', 'w') as f:
     f.write(index_template.replace('**h**', h_select).replace('**c**', c_select))
