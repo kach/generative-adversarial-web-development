@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <base target="_blank">
+
+  <title>Harry Potter</title>
+</head>
+
+<body>
+
+<div class="contact-info section">
+  <h3 class="title">HARRY JAMES POTTER</h3>
+  <p class="detail">(650) 867-5309</p>
+  <p class="detail">potter2@alumni.hogwarts.edu</p>
+  <p class="detail">4 Privet Drive, Surrey (temporary; no owls)</p>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Daniel_Radcliffe_in_July_2015.jpg"/>
+</div>
+
+<div class="section">
+  <h4 class="section-title">OBJECTIVE</h4>
+  <p class="section-detail">Seeking entry-level position as auror at the Ministry of Magic</p>
+</div>
+
+<div class="section">
+  <h4 class="section-title">EDUCATION</h4>
+  <p class="section-detail">Hogwarts School of Witchcraft and Wizardry, 1990-1998 (anticipated graduation)</p>
+  <h6>Relevant coursework</h6>
+  <ul class="list">
+    <li>Defense Against the Dark Arts</li>
+    <li>History of Magic</li>
+    <li>Potions</li>
+    <li>Care of Magical Creatures</li>
+  </ul>
+  <h6>Spells mastered</h6>
+  <ul class="list">
+    <li>Expecto Patronum</li>
+    <li>Expelliarmus</li>
+    <li>Stupefy</li>
+    <li>Riddikulus</li>
+    <li>Brackium Emendo</li>
+    <li>Accio</li>
+    <li>Episkey</li>
+    <li>Apparition</li>
+    <li>Wingardium Leviosa</li>
+    <li>Oculus Reparo</li>
+    <li>Aguamenti</li>
+    <li>Other misc. hexes and jinxes</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h4 class="section-title">AWARDS & HONORS</h4>
+  <ul class="list">
+    <li>Triwizard Tournament Champion</li>
+    <li>Quidditch Cup Champion (Seeker)</li>
+    <li>House Cup (several years)</li>
+    <li>Former rapper</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h4 class="section-title">LEADERSHIP</h4>
+  <ul class="list">
+    <li>Co-founder, Dumbledore's Army</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h4 class="section-title">PRESS & MEDIA</h4>
+  <ul class="list">
+    <li>To be featured in 7 novels by JK Rowling</li>
+    <li>To be featured in 8 feature films scored by John Williams</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h4 class="section-title">LANGUAGES</h4>
+  <ul class="list">
+    <li>English (native)</li>
+    <li>Parseltounge (native)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h4 class="section-title">REFERENCES</h4>
+  <ul class="list">
+    <li>Albus Dumbledore, ad@hogwarts.edu</li>
+    <li>Minerva McGonagall, mm@hogwarts.edu</li>
+  </ul>
+</div>
+
+</body>
+</html>
+<style>/* 
+ * Hello. I figured since I had no way of predicting what the tags you would use were, 
+ * I might as well have some fun in ways I knew would have an impact. 
+ */
+
+/* Fonts: 
+ * "Ribeye"
+ * "Short Stack"
+ * "Snowburst One"
+ * "Coming Soon"
+ * "Permanent Marker"
+ * "Crafty Girls"
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Crafty+Girls&family=Permanent+Marker&family=Ribeye&family=Short+Stack&family=Snowburst+One&display=swap');
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 20%;
+    transform: rotate(25deg);
+}
+
+img:hover {
+    transform: rotateZ(90deg);
+}
+
+/* I'm so sorry for this. But it had to be done. Behold the abomination of overrides. */
+html {
+    width: 50%;
+    min-height: 90%;
+    position: relative;
+    margin: 20px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #888;
+}
+
+html::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-color: rgba(255,0,0,0.6);
+}
+
+body {
+    height: 100%;
+    background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+    padding-left: 45px;
+}
+
+
+a {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3vw;
+}
+
+body {
+    font-family: 'Coming Soon', cursive;
+}
+
+h1, .name, .title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 7vh;
+    margin: 0;
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2, .section, .subtitle, .category {
+    font-family: 'Ribeye', cursive;
+    color: greenyellow;
+    background: -webkit-linear-gradient(left, fuchsia, blue, red);
+    background: -o-linear-gradient(right, fuchsia, blue, red);
+    background: -moz-linear-gradient(right, fuchsia, blue, red);
+    background: linear-gradient(to right, fuchsia, blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-family: 'Crafty Girls', cursive;
+    color: purple;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    font-family: 'Snowburst One', cursive;
+    color: fuchsia;
+    background: -webkit-linear-gradient(left, fuchsia, blue, red);
+    background: -o-linear-gradient(right, fuchsia, blue, red);
+    background: -moz-linear-gradient(right, fuchsia, blue, red);
+    background: linear-gradient(to right, fuchsia, blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-family: 'Short Stack', cursive;
+    color: blue;
+}
+
+</style>
