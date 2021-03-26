@@ -19,7 +19,7 @@ for html in glob.glob('html/*.html'):
         html_names.add(html_name)
         css_names.add(css_name)
 
-        out_name = f'www/{html_name}__{css_name}.html'
+        out_name = f'docs/{html_name}__{css_name}.html'
         with open(out_name, 'w') as f:
             f.write(html_content)
             f.write('<style>' + css_content + '</style>')
@@ -34,5 +34,5 @@ for h in sorted(html_names):
 for c in sorted(css_names):
     c_select += (f'''  <option value="{c}"{' selected' if 'none' in c else ''}>{c}</option>\n''')
 
-with open('www/index.html', 'w') as f:
+with open('docs/index.html', 'w') as f:
     f.write(index_template.replace('**h**', h_select).replace('**c**', c_select))
